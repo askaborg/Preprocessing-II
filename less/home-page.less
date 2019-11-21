@@ -6,8 +6,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -50,12 +48,26 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
+    .ddj-flex(flex, row, space-between);
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .sign-me-up(10px, @button-bg, @white, 1.6rem, bold, 200px, 13px, 13px, center, 100%)
+      }
+    }
+  }
+
+  .introduction {
+    border-bottom: 2px dashed @navigation-border;
+
+    h1 {
+      .trbl-m(10px, 0, 10px, 0);
+    }
+
+    p {
+      .trbl-m(0, 0, 10px, 0);
     }
   }
 }// home

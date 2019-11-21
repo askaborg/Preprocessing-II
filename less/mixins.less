@@ -1,6 +1,37 @@
 // Mixins in here
-.container-of-flexes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+// show eastern-blue border
+.test-border(@color) {
+    border: 1px solid @color;
+}
+
+// tOP rIGHT bOTTOM lEFT - mARGIN
+.trbl-m(@top, @right, @bottom, @left) {
+    margin: @top @right @bottom @left;
+}
+
+// tOP rIGHT bOTTOM lEFT - pADDING
+.trbl-p(@top, @right, @bottom, @left) {
+    padding: @top @right @bottom @left;
+}
+
+// dISPLAY FLEX-dIRECTION jUSTYFY-CONTENT - flex
+.ddj-flex(@display, @flex-direction, @justify-content) {
+    display: @display;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+}
+
+.sign-me-up(@border-radius, @background-color, @color, @font-size, @font-weight, @max-width, @padding-bottom,
+    @padding-top, @text-align, @width) {
+        border-radius: @border-radius;
+        background-color: @background-color;
+        color: @color;
+        font-size: @font-size;
+        font-weight: @font-weight;
+        max-width: @max-width;
+        padding-bottom: @padding-bottom;
+        padding-top: @padding-top;
+        text-align: @text-align;
+        width: @width;
 }

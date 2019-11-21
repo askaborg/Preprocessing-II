@@ -3,23 +3,18 @@
 
 .heading-at-the-top {
     border-bottom: 2px dashed @navigation-border;
-    padding: 25px 0px 25px 0px;
+    .trbl-p(25px, 0, 25px, 0);
 }
 
 .container-of-the-heading {
-    .container-of-flexes();
+    .ddj-flex(flex, row, space-between);
     .container();
 }
 
 .container-of-the-navigation {
     align-items: center;
+    .ddj-flex(flex, row, space-between);
     max-width: 800px;
-    margin: 0px 40px 0px 0px;
+    .trbl-m(0, 40px, 0, 0);
     width: 40%;
-    .container-of-flexes();
-    a {
-        color: @font-color;
-        font-size: 1.5em;
-        text-decoration: none;
-    }
 }
