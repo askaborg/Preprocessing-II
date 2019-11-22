@@ -22,8 +22,10 @@
     justify-content: @justify-content;
 }
 
-.sign-me-up(@border-radius, @background-color, @color, @font-size, @font-weight, @max-width, @padding-bottom,
-    @padding-top, @text-align, @width) {
+// .sign-me-up(10px, @button-bg, @white, 1.6rem, bold, 200px, 13px, 13px, center, 100%)
+.sign-me-up(@border-radius: 10px, @background-color: @button-bg, @color: @white, @font-size: 1.6rem, 
+    @font-weight: bold, @max-width: 200px, @padding-bottom: 13px, @padding-top: 13px,
+    @text-align: center, @width: 100%) {
         border-radius: @border-radius;
         background-color: @background-color;
         color: @color;
@@ -35,3 +37,4 @@
         text-align: @text-align;
         width: @width;
 }
+
