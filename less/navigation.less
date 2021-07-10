@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+
+.heading-at-the-top {
+    border-bottom: 2px dashed @navigation-border;
+    .trbl-p(25px, 0, 25px, 0);
+
+    @media @mobile {
+        .trbl-p(10px, 0, 10px, 0);
+    }
+}
+
+.container-of-the-heading {
+    .ddj-flex(flex, row, space-between);
+    .container();
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.container-of-the-navigation {
+    align-items: center;
+    .ddj-flex(flex, row, space-between);
+    max-width: 800px;
+    .trbl-m(0, 40px, 0, 0);
+    width: 40%;
+
+    @media @mobile {
+        width: 80%;
+        .trbl-m(10px, auto, 0, auto);
+    }
+}

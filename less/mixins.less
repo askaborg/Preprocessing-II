@@ -1,1 +1,40 @@
 // Mixins in here
+
+// show eastern-blue border
+.test-border(@color) {
+    border: 1px solid @color;
+}
+
+// tOP rIGHT bOTTOM lEFT - mARGIN
+.trbl-m(@top, @right, @bottom, @left) {
+    margin: @top @right @bottom @left;
+}
+
+// tOP rIGHT bOTTOM lEFT - pADDING
+.trbl-p(@top, @right, @bottom, @left) {
+    padding: @top @right @bottom @left;
+}
+
+// dISPLAY FLEX-dIRECTION jUSTYFY-CONTENT - flex
+.ddj-flex(@display, @flex-direction, @justify-content) {
+    display: @display;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+}
+
+// .sign-me-up(10px, @button-bg, @white, 1.6rem, bold, 200px, 13px, 13px, center, 100%)
+.sign-me-up(@border-radius: 10px, @background-color: @button-bg, @color: @white, @font-size: 1.6rem, 
+    @font-weight: bold, @max-width: 200px, @padding-bottom: 13px, @padding-top: 13px,
+    @text-align: center, @width: 100%) {
+        border-radius: @border-radius;
+        background-color: @background-color;
+        color: @color;
+        font-size: @font-size;
+        font-weight: @font-weight;
+        max-width: @max-width;
+        padding-bottom: @padding-bottom;
+        padding-top: @padding-top;
+        text-align: @text-align;
+        width: @width;
+}
+
